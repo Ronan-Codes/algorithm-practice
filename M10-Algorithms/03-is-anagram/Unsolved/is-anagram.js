@@ -4,17 +4,25 @@
 var isAnagram = function(strA, strB) {
     // check if each letter in strA is included in strB
     // check if false may be easier 
-
+    var result = true;
     var aMap = {};
     var bMap = {};
 
     for (var i=0; i<strA.length; i++) {
-        aMap[strA[i]] = true;
+        aMap[strA[i]] = (aMap[strA[i]] || 0) + 1
     }
 
     for (var i=0; i<strB.length; i++) {
-        aMap[strB[i]] = true;
+        bMap[strB[i]] = (bMap[strB[i]] || 0) + 1
     }
 
+    // console.log(aMap, bMap)
+
+    for (const key in aMap) {
+        if (aMap[key] !== bMap[key]) {
+            result = false
+        }
+    }
     
+    return result
 };
