@@ -27,6 +27,9 @@
 		{
 			"name": "M10-Algorithms",
 			"path": "M10-Algorithms"
+		},
+		{
+			"path": "M11-Algorithms"
 		}
 	],
 	"settings": {}
