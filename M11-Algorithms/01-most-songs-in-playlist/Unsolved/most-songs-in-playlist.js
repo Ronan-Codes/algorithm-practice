@@ -4,6 +4,7 @@
 
 var mostSongsInPlaylist = function(arr) {
   var arrInOrder = arr.sort();
+  // .sort((a,b) => b-a) is DESCENDING; ((a,b) => a-b) is ASCENDING
   var minutes = 0
   var limit = 60
   var numberOfSongs = 0
