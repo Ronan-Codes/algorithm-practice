@@ -30,6 +30,12 @@
 		},
 		{
 			"path": "M11-Algorithms"
+		},
+		{
+			"path": "M12-Algorithms"
+		},
+		{
+			"path": "../../Assignment-Projects/M20-react-portfolio/react-portfolio"
 		}
 	],
 	"settings": {}
