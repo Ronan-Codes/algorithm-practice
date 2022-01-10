@@ -1,41 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "M3-Algorithms",
-			"path": "M3-Algorithms"
-		},
-		{
-			"name": "M4-Algorithms",
-			"path": "M4-Algorithms"
-		},
-		{
-			"name": "M5-Algorithms",
-			"path": "M5-Algorithms"
-		},
-		{
-			"name": "M6-Algorithms",
-			"path": "M6-Algorithms"
-		},
-		{
-			"name": "M7-Algorithms",
-			"path": "M7-Algorithms"
-		},
-		{
-			"name": "M9-Algorithms",
-			"path": "M9-Algorithms"
-		},
-		{
-			"name": "M10-Algorithms",
-			"path": "M10-Algorithms"
-		},
-		{
-			"path": "M11-Algorithms"
-		},
-		{
-			"path": "M12-Algorithms"
-		},
-		{
-			"path": "../../Assignment-Projects/M20-react-portfolio/react-portfolio"
+			"path": "."
 		}
 	],
 	"settings": {}
