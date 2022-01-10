@@ -3,14 +3,30 @@
 // Else return false
 
 var permutationSubstring = function(str, sub) {
-    var strArr = str.split("");
-    var subArr = sub.split("");
+    var result = true
+    var subObj = {} 
+    var strObj = {}
 
-    var strObj = {} 
-
-    for (var i = 0; i < strArr; i++) {
-        strObj[strArr[i]] = (strObj[strArr[i]] || 0) + 1
+    for (var i = 0; i < sub.length; i++) {
+        subObj[sub[i]] = (subObj[sub[i]] || 0) + 1
     }
-    console.log(strObj[1])
 
+    for (var i = 0; i < str.length; i++) {
+        strObj[str[i]] = (strObj[str[i]] || 0) + 1
+    }
+
+    for (const key in subObj) {
+        if (!strObj[key]) {
+            return false
+        }
+        else if (strObj[key] < subObj[key]) {
+            return false
+        }
+        // else if (strObj[key] === subObj[key]) {
+        //     result = true
+        // }
+    }
+
+    console.log(subObj, strObj)
+    return result
 };

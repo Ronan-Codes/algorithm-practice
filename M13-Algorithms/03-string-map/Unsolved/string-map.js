@@ -6,16 +6,12 @@ var stringMap = function(str) {
     var result = {}
 
     for (var i = 0; i < str.length; i++) {
-        // console.log(str[i])
-
         if(!result[str[i]]) {
             result[str[i]] = [i]
         }
         else {
             result[str[i]].push(i)
         }
-
-        // result[i] = ([] || result[i].push(i))
     }
 
     console.log(result)
